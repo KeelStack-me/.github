@@ -1,21 +1,19 @@
 # ⚓ KeelStack
 
-### **Build Your Next Startup, Not Just Boilerplate.**
+### Build Your Next Startup, Not Just Boilerplate.
 
-KKeelStack is a company on a mission to deliver **production-oriented**, modular starter kits architected for the AI-assisted development era.. We provide the essential, professional‑grade plumbing—Auth, Payments, Security, Database — so you can focus more on your unique idea and ship faster while owning all your equity.
+KeelStack delivers production-oriented, modular starter kits architected for the AI-assisted development era. We provide the essential, professional-grade plumbing — Auth, Payments, Security, Database — so you can focus on your unique idea and ship faster while owning all your code.
 
 KeelStack focuses on providing well-structured starting points. Final quality, security, and compliance depend on how the system is configured, reviewed, and operated.
-
-KeelStack is under active development and evolving in public. Early access will open progressively as each kit reaches production readiness.
 
 ---
 
 ## What KeelStack Is — and Is Not
 
 **KeelStack is:**
-- A set of production-ready, opinionated starter systems for real SaaS businesses
+- Production-ready, opinionated starter systems for real SaaS businesses
 - Built for founders who want full source ownership and long-term control
-- Designed to work *with* AI coding tools, not fight them
+- Designed to work with AI coding tools, not fight them
 
 **KeelStack is not:**
 - A boilerplate zip dump
@@ -23,38 +21,40 @@ KeelStack is under active development and evolving in public. Early access will 
 - A locked SaaS, hosted service, or vendor-controlled runtime
 - A tutorial project or demo stack
 
-KeelStack does not claim to be exhaustive, complete, or suitable for every business model.
-Each project has unique legal, security, and operational requirements.
+---
+
+## 🚀 Available Now
+
+### KeelStack Backend Kit — v1.0
+*Node.js · Express · TypeScript · PostgreSQL · Stripe · Resend*
+
+A production-grade backend foundation covering:
+- Authentication — register, login, refresh tokens, MFA, password reset, email verification
+- Billing — Stripe subscriptions, webhook handling, idempotency
+- Database — PostgreSQL via Drizzle ORM with in-memory fallback
+- Email — Resend integration
+- Observability — Sentry and OpenTelemetry hooks
+- Health endpoints — /healthz, /readyz, /health
+
+**133 unit tests · 36 e2e checks · 93% statement coverage · 0 vulnerabilities**
+
+Backend-only by design. Works with React, Next.js, Vue, Svelte, React Native, or any frontend you already have.
+
+[Get KeelStack Backend Kit →](https://keelstack.me)
 
 ---
 
-## 🚀 What We're Building
+## 🗺️ Roadmap
 
-### Flagship Focus (In Active Development)
-
-**Next.js Pro SaaS Starter**  
-*Next.js 15 · Prisma / Drizzle · Tailwind · Stripe / Paddle*
-
-A production-grade–inspired SaaS foundation covering:
-- Authentication and authorization
-- Billing, subscriptions, and tax handling
-- Secure database patterns
-- Email, webhooks, and background workflows
-
-This is the primary focus and will ship first.
-
----
-
-### Research & Roadmap
-
-These kits are in exploration or early design stages and will progress only after the flagship is stable:
+These kits are in research or early design and will progress after the backend kit is stable:
 
 | Kit | Stack | Status |
-|----|----|----|
+|-----|-------|--------|
+| Next.js Pro SaaS Starter | Next.js 15 · Drizzle · Tailwind · Stripe | Planned |
 | AI Agent Kit | Python / Node · LangChain · OpenAI | Research |
-| Mobile SaaS Starter | React Native · Expo · NativeWind | Roadmap |
+| Mobile SaaS Starter | React Native · Expo · NativeWind | Research |
 
-Roadmap items reflect current exploration and may change as the project evolves.
+Roadmap items reflect current exploration and may change.
 
 ---
 
@@ -62,87 +62,49 @@ Roadmap items reflect current exploration and may change as the project evolves.
 
 KeelStack is architected to work predictably with modern AI coding tools.
 
-- **`.cursorrules` included** — curated context that reduces hallucinations and enforces architectural boundaries
-- **Deterministic structure** — clear module boundaries so AI refactors don’t break business logic
-- **Prompt-ready patterns** — consistent, readable code that AI tools can safely extend
-
-The goal is simple: let AI accelerate development without introducing hidden risk.
+- `.cursorrules` included — curated context that reduces hallucinations and enforces architectural boundaries
+- Deterministic structure — clear module boundaries so AI refactors don't break business logic
+- Prompt-ready patterns — consistent, readable code that AI tools can safely extend
 
 ---
 
-## Scope & Responsibility
+## Core Technology Choices
 
-KeelStack provides **code patterns and system structure**, not hosted services, operational management, or business guarantees.
-
-Each team is responsible for validating, securing, and maintaining their own deployment.
-Independent review and testing are strongly recommended before production use.
+| Layer | Recommendation | Why |
+|-------|---------------|-----|
+| Payments | Stripe / Paddle | Global tax compliance, fraud protection, robust APIs |
+| Authentication | Auth.js (v5) / Clerk | Edge-compatible, secure by default, framework agnostic |
+| Database | PostgreSQL / Supabase | Relational integrity that scales from MVP to millions |
+| Email | Resend / Postmark | Highest deliverability for transactional emails |
 
 ---
 
-## 🛡️ Security, Ownership & Trust
+## 🛡️ Security & Trust
 
-KeelStack takes a security-first approach to system design.
+KeelStack takes a security-first approach to system design. Security depends on correct usage, configuration, and ongoing maintenance. KeelStack reduces common architectural mistakes — it does not eliminate risk entirely.
 
-Security depends on correct usage, configuration, dependency management, and ongoing maintenance. KeelStack aims to reduce common architectural mistakes — not eliminate risk entirely.
-
-- Responsible vulnerability disclosure with a private reporting channel
+- Responsible vulnerability disclosure via private reporting channel
 - Clear security boundaries and access control patterns
-- Architected to support auditability, traceability, and handling of real customer data.
-
-We publish and enforce a Security Policy, Code of Conduct, and Contributing Guidelines to ensure long-term trust.
+- Architected to support auditability and handling of real customer data
 
 ---
 
-### Core Technology Choices
+## 💬 Connect
 
-
-| Layer | Our Recommendation | Why |
-| :--- | :--- | :--- |
-| **Payments & Tax** | **Paddle** or **Stripe** | Global tax compliance (Merchant of Record), fraud protection, and robust APIs. |
-| **Authentication** | **Auth.js (v5)** or **Clerk** | Edge‑compatible, secure by default, and framework agnostic. |
-| **Database** | **PostgreSQL** / **Supabase** | Rock‑solid relational integrity with powerful tooling that scales from MVP to millions of users. |
-| **Email** | **Resend** or **Postmark** | Highest deliverability so your critical transactional emails always land in the inbox. |
-
----
-
-#### Third-Party Dependencies
-
-KeelStack builds on widely-used open-source tools and third-party services. Their behavior, availability, and policies are outside our control and evolve independently.
-
----
-
-## Governance & Accountability
-
-KeelStack operates with published policies covering:
-- Security disclosure
-- Community conduct
-- Contribution standards
-
-These are not placeholders — they are actively enforced and evolve alongside the codebase.
-Violations may result in moderation actions, access restriction, or removal from the community.
-
----
-
-## 💬 Connect with Us
-
-We believe in building in public and learning together. Whether you're a developer, a potential partner, or just curious, our channels are open:
-
-- **Discussions**: Share your ideas, vote on features, and follow our progress in [GitHub Discussions](https://github.com/orgs/KeelStack-me/discussions).
-- **General Inquiries: (`hello@keelstack.me`)** – for feedback, ideas, or just to say hi.
-- **Founder (`founder@keelstack.me`)** – for partnerships, strategy, or a direct chat.
-- **Support (`support@keelstack.me`)** – technical assistance with your kit (once launched).
-- **Security (`security@keelstack.me`)** – responsible disclosure of vulnerabilities.
-- **Website:** [keelstack.me](https://keelstack.me) – for product details and to get notified when we launch.
+- **Discussions:** [GitHub Discussions](https://github.com/orgs/KeelStack-me/discussions)
+- **General:** [hello@keelstack.me](mailto:hello@keelstack.me)
+- **Founder:** [founder@keelstack.me](mailto:founder@keelstack.me)
+- **Support:** [support@keelstack.me](mailto:support@keelstack.me)
+- **Security:** [security@keelstack.me](mailto:security@keelstack.me)
+- **Website:** [keelstack.me](https://keelstack.me)
 
 ---
 
 ## 🤝 Community & Governance
 
-KeelStack is built on a foundation of professional conduct, collaboration, and mutual respect.
-
-- [**Contributing Guidelines**](https://github.com/KeelStack-me/.github/blob/main/CONTRIBUTING.md)
-- [**Security Policy**](https://github.com/KeelStack-me/.github/blob/main/SECURITY.md)
-- [**Code of Conduct**](https://github.com/KeelStack-me/.github/blob/main/CODE_OF_CONDUCT.md)
+- [Contributing Guidelines](https://github.com/KeelStack-me/.github/blob/main/CONTRIBUTING.md)
+- [Security Policy](https://github.com/KeelStack-me/.github/blob/main/SECURITY.md)
+- [Code of Conduct](https://github.com/KeelStack-me/.github/blob/main/CODE_OF_CONDUCT.md)
 
 ---
 
