@@ -26,7 +26,7 @@ If you discover a security vulnerability in any KeelStack repository, **please d
 Instead, report all security concerns through one of the following private channels:
 
 - **GitHub Private Vulnerability Reporting** (recommended): Go to the **Security** tab of the relevant repository and click **Report a vulnerability**.
-- **Email**: [security@keelstack.me](mailto:security@keelstack.me) – PGP key available upon request.
+- **Email**: [security@keelstack.me](mailto:security@keelstack.me).
 
 Reports are handled privately and access is restricted to core maintainers.
 
