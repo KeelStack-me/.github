@@ -2,7 +2,7 @@
 
 At KeelStack, we take security seriously across everything we operate — our open-source repositories and our closed-source sponsor platform alike.
 
-This policy applies to all KeelStack-maintained code and services unless a more specific repository-level or service-level security policy is provided. Two surfaces are covered: **public repositories** (currently [Guard](https://github.com/KeelStack-me/guard)) and the **KeelStack sponsor platform** (`keelstack.me` / `app.keelstack.me`).
+This policy applies to all KeelStack-maintained code and services unless a more specific repository-level or service-level security policy is provided. Two surfaces are covered: **public repositories** and the **KeelStack sponsor platform** (`keelstack.me` / `app.keelstack.me`).
 
 We welcome security researchers and community members who help us improve the security of KeelStack software. This policy is designed to make responsible reporting clear, private, and actionable.
 
