@@ -1,8 +1,8 @@
 # KeelStack Security Policy
 
-At KeelStack, we take security seriously across all repositories in the organization, including public repositories, private repositories, internal repositories, and template repositories.
+At KeelStack, we take security seriously across everything we operate — our open-source repositories and our closed-source sponsor platform alike.
 
-This policy applies to every repository that is maintained by the KeelStack organization unless a more specific repository-level security policy is provided.
+This policy applies to all KeelStack-maintained code and services unless a more specific repository-level or service-level security policy is provided. Two surfaces are covered: **public repositories** (currently [Guard](https://github.com/KeelStack-me/guard)) and the **KeelStack sponsor platform** (`keelstack.me` / `app.keelstack.me`).
 
 We welcome security researchers and community members who help us improve the security of KeelStack software. This policy is designed to make responsible reporting clear, private, and actionable.
 
@@ -23,18 +23,15 @@ Security fixes are not backported to unsupported versions unless explicitly stat
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in any KeelStack repository, please do not open a public issue.
+Please do not open a public issue for a security vulnerability, and do not disclose it publicly before we've had a chance to investigate.
 
-Instead, report it privately through one of the following channels:
+**Public repositories (e.g. Guard)** — use **GitHub Private Vulnerability Reporting**: open the **Security** tab of the affected repository and select **Report a vulnerability**. If that isn't enabled on the repository, use the email below.
 
-- **GitHub Private Vulnerability Reporting** (recommended): Use the **Security** tab of the affected repository and select **Report a vulnerability**.
-- **Email**: [security@keelstack.me](mailto:security@keelstack.me)
-
-If the repository does not have private vulnerability reporting enabled, use the email address above.
+**KeelStack sponsor platform** (`keelstack.me`, `app.keelstack.me`) — email [security@keelstack.me](mailto:security@keelstack.me). There is no public repository for the platform, so email is the only private channel.
 
 Please include, if possible:
 - A clear description of the issue.
-- The affected repository and version.
+- The affected repository or service, and version if applicable.
 - Steps to reproduce.
 - The security impact.
 - Any proof of concept or relevant logs, if safe to share.
@@ -61,8 +58,8 @@ If we cannot resolve the issue within 90 days, we will work with the reporter to
 We will not pursue legal action against researchers who report vulnerabilities responsibly and in good faith, in accordance with this policy.
 
 Authorized research includes:
-- Testing KeelStack repositories for security issues.
-- Reviewing repository code and configuration.
+- Testing KeelStack repositories and the sponsor platform for security issues.
+- Reviewing public repository code and configuration.
 - Validating a vulnerability with the minimum proof needed to demonstrate impact.
 - Coordinating privately with maintainers before public disclosure.
 
@@ -79,18 +76,13 @@ Please do not:
 
 ### In Scope
 
-Security issues in the following areas are in scope when they affect KeelStack-maintained code, templates, or infrastructure:
+Security issues are in scope when they affect KeelStack-maintained code or services.
 
-- Authentication and session management.
-- Authorization and access control.
-- Tenant isolation and data leakage.
-- Injection flaws.
-- Insecure configuration.
-- Webhook verification and signing.
-- Billing and subscription logic.
-- Secrets handling and environment configuration.
-- Infrastructure scaffolding and deployment logic.
-- Template logic that is shipped as part of a KeelStack repository.
+**Public repositories (Guard):** reports may be based on reading the source. Relevant areas include authentication and authorization logic, injection flaws, unsafe defaults, dependency handling, and anything shipped as part of the library.
+
+**Sponsor platform (black-box testing only — source is not public):** relevant areas include magic-link token handling and portal session security, creator authentication and account access control, cross-account data exposure, file upload and asset storage handling, billing and subscription webhook verification, consent and personal-data handling, and API authorization.
+
+In both cases: insecure configuration, secrets exposure, and signed-webhook bypasses are in scope.
 
 ### Out of Scope
 
@@ -100,7 +92,8 @@ The following are out of scope:
 - Social engineering, phishing, or physical attacks.
 - Denial-of-service attacks that do not demonstrate a security impact.
 - Automated scanner reports without manual verification and impact.
-- Issues in custom implementations built by users on top of KeelStack templates unless the issue is caused by KeelStack-provided code.
+- Issues in custom implementations built by users on top of KeelStack code unless the issue is caused by KeelStack-provided code.
+- Attempts to access another user's account or data beyond the minimum needed to demonstrate a vulnerability.
 
 ---
 
@@ -119,24 +112,29 @@ If you prefer anonymity, please let us know and we will respect that where possi
 
 ## Acknowledgments
 
-If you are the first to report a unique, valid security issue, we may:
-- Credit you in release notes or advisories, unless you prefer to remain anonymous.
-- Offer a complimentary Premium License or similar courtesy reward at our discretion.
+If you are the first to report a unique, valid security issue, we may credit you in release notes or advisories, unless you prefer to remain anonymous.
 
-We do not currently operate a formal bug bounty program.
+We do not currently operate a formal bug bounty program and do not offer monetary rewards.
 
 ---
 
 ## Security Hardening
 
-KeelStack repositories should use security best practices appropriate to the project, including:
+KeelStack repositories and services should use security best practices appropriate to the project, including:
 - Input validation.
 - Secret scanning and push protection.
 - Dependency review and updates.
 - Secure defaults.
 - Environment-based configuration.
 - Signed webhooks where applicable.
-- Rate limiting where applicable.
+- Rate limiting where implemented.
 - Audit logging where applicable.
 
-For repository-specific guidance, see that repository’s documentation.
+For repository-specific guidance, see that repository's documentation.
+
+---
+
+## Contact
+
+- Security reports: [security@keelstack.me](mailto:security@keelstack.me)
+- General and product questions: [hello@keelstack.me](mailto:hello@keelstack.me)
