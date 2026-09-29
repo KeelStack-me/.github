@@ -1,14 +1,14 @@
 # 📜 KeelStack Community Code of Conduct
 
-**Our shared commitment:** KeelStack is built by and for indie hackers, founders, and developers who want to ship great software without friction. This Code of Conduct exists to protect our community, not to police good‑faith participation. It reflects our shared values of respect, kindness, and technical excellence.
+**Our shared commitment:** KeelStack is an organization with two audiences — creators who use our sponsor platform, and developers who contribute to our open-source work like Guard. This Code of Conduct exists to protect both, not to police good-faith participation. It reflects our shared values of respect, kindness, and technical excellence.
 
 ---
 
 ## Our Pledge
 
-We, as members, contributors, and leaders of the **KeelStack community**, pledge to make participation in our community a **harassment‑free experience for everyone**, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We, as members, contributors, and leaders of the **KeelStack community**, pledge to make participation in our community a **harassment-free experience for everyone**, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We are committed to building a community where indie hackers, founders, and developers feel safe, respected, and empowered to learn and grow together.
+We are committed to building a community where creators, contributors, and developers feel safe, respected, and empowered to learn and grow together.
 
 ---
 
@@ -29,7 +29,8 @@ We are committed to building a community where indie hackers, founders, and deve
 - **Trolling, insulting or derogatory comments**, and personal or political attacks.
 - **Public or private harassment** of any kind.
 - **Publishing others' private information** (e.g., email, address) without explicit permission – also known as *doxxing*.
-- **Encouraging or facilitating violations** of KeelStack’s licensing or terms (violates our terms and harms the community).
+- **Encouraging or facilitating violations** of KeelStack's terms of service, or of the license terms of any open-source project published under this organization.
+- **Attempting to extract, reverse-engineer, or redistribute** the closed-source KeelStack product, or pressuring maintainers to open-source it.
 - Any other conduct that could reasonably be considered **inappropriate in a professional setting**.
 
 ---
@@ -48,9 +49,9 @@ We have the right and responsibility to **remove, edit, or reject** comments, co
 
 This Code of Conduct applies **within all KeelStack community spaces**, including:
 
-- Our **GitHub repositories** (issues, discussions, pull requests)
-- Our **X/Twitter community interactions**
-- Any **official KeelStack events** (virtual or in‑person)
+- **Public GitHub repositories** under the KeelStack organization — issues, discussions, and pull requests. (The KeelStack product itself is closed source and has no public repository; Guard and any future open-source projects do.)
+- Our **X/Twitter community interactions**.
+- Any **official KeelStack events** (virtual or in-person).
 
 It also applies when an individual is **officially representing the community** in public spaces (e.g., using an official email address, posting as a representative on social media, or speaking at an event). All interactions must remain professional and appropriate for a mixed-age public community.
 
@@ -104,7 +105,7 @@ Community leaders will follow these guidelines when determining consequences for
 **Community Impact:** Demonstrating a pattern of violating community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.  
 **Consequence:** A permanent ban from any kind of public interaction within the community.
 
-This Code of Conduct is governed and interpreted in accordance with applicable laws in the operator’s jurisdiction.
+This Code of Conduct is governed and interpreted in accordance with applicable laws in the operator's jurisdiction.
 
 ---
 
