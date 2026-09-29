@@ -1,13 +1,16 @@
 # Contributing to KeelStack
 
-First off, thank you for considering contributing to **KeelStack**. We build modular software foundations and public community projects for founders, developers, and builders who want to ship fast while keeping control of their code.
+First off, thank you for considering contributing to **KeelStack**.
 
-This guide applies to **public KeelStack repositories** and community-facing projects. Private templates and internal products are maintained separately and are not open for external contributions.
+KeelStack is an organization with two sides: a closed-source commercial product (a sponsor CRM for solo newsletter and podcast creators) and open-source community work.
+
+**This guide applies only to public KeelStack repositories.** The KeelStack sponsor platform is closed source and does not accept external contributions. If you want to contribute to KeelStack, you contribute to Guard or to a future public project.
 
 ---
 
 ## Table of Contents
 - [Code of Conduct](#code-of-conduct)
+- [Where You Can Contribute](#where-you-can-contribute)
 - [First Time? Start Here](#first-time-start-here)
 - [How Can I Contribute?](#how-can-i-contribute)
 - [Development Guidelines](#development-guidelines)
@@ -20,13 +23,25 @@ This guide applies to **public KeelStack repositories** and community-facing pro
 
 This project and everyone participating in it is governed by our [Code of Conduct](https://github.com/keelstack-me/.github/blob/main/CODE_OF_CONDUCT.md). By participating, you agree to uphold it.
 
-Please report unacceptable behavior to [security@keelstack.me](mailto:security@keelstack.me) or follow the repository’s moderation guidance if provided.
+Please report unacceptable behavior to [siddhant@keelstack.me](mailto:siddhant@keelstack.me), or [hello@keelstack.me](mailto:hello@keelstack.me) if your report concerns the founder. Full reporting process is in the Code of Conduct.
+
+---
+
+## Where You Can Contribute
+
+| Repository | Status | Open to contributions? |
+|---|---|---|
+| [guard](https://github.com/KeelStack-me/guard) | Active | ✅ Yes |
+| KeelStack sponsor platform | Closed source | ❌ No — no public repository exists |
+| `keelstack-ui-starter` | Deleted Sept 2026 | ❌ No — repository no longer exists |
+
+If a repository is not listed above as open, assume it is not open. Do not open pull requests against private repositories, and do not request that the sponsor platform be open-sourced.
 
 ---
 
 ## First Time? Start Here
 
-New to open source or GitHub? We’re glad you’re here.
+New to open source or GitHub? We're glad you're here.
 
 1. Explore issues labeled `good first issue` or `help wanted` in the relevant public repository.
 2. Read the repository README and any linked docs before starting work.
@@ -51,7 +66,7 @@ We allow AI-assisted contributions, but the contributor remains fully responsibl
 If you find a bug:
 
 1. Search existing issues first.
-2. Use the repository’s bug template if one exists.
+2. Use the repository's bug template if one exists.
 3. Include:
    - Environment details.
    - Clear steps to reproduce.
@@ -59,11 +74,13 @@ If you find a bug:
    - Relevant logs, screenshots, or error messages.
    - Severity and impact if known.
 
+**Note:** This applies to public repositories only. Bugs in the KeelStack sponsor platform should be reported to [hello@keelstack.me](mailto:hello@keelstack.me), not as GitHub issues.
+
 ### Suggesting Features
 
 If you have a feature idea:
 
-1. Check the repository’s Discussions or Ideas category first.
+1. Check the repository's Discussions or Ideas category first.
 2. Explain:
    - The problem.
    - The proposed solution.
@@ -125,11 +142,9 @@ All contributions are reviewed by a maintainer.
 
 ## Repository Scope
 
-This contribution guide applies to **public community repositories** in the KeelStack organization.
+This contribution guide applies to **public community repositories** in the KeelStack organization — currently Guard, and any future open-source project published under this org.
 
-Private repositories, paid templates, and internal products are maintained by the KeelStack team and are not open to external pull requests unless explicitly stated in that repository.
-
-If a private repository has a separate contribution process, it will document that process inside the repo.
+The KeelStack sponsor platform is closed source. It has no public repository and does not accept external pull requests. This is a deliberate product decision, not an oversight, and it will not change.
 
 ---
 
@@ -137,7 +152,7 @@ If a private repository has a separate contribution process, it will document th
 
 - Community questions: use the repository discussions or Q&A area if available.
 - Repo-specific issues: open an issue in the relevant public repository.
+- Product or account questions (sponsor platform): [hello@keelstack.me](mailto:hello@keelstack.me)
 - Security issues: follow the [Security Policy](https://github.com/keelstack-me/.github/blob/main/SECURITY.md).
-- Other contact: [hello@keelstack.me](mailto:hello@keelstack.me)
 
 Thank you for helping improve KeelStack.
